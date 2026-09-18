@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gus De | Portofolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+
+<body class="font-body bg-gradient-to-br from-blue-50 via-white to-cyan-100 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950 text-slate-700 dark:text-slate-300 transition-colors duration-300">
+
+<!-- ============ NAVBAR ============ -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-slate-900/70 border-b border-blue-100 dark:border-slate-800">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" class="font-display text-xl font-bold text-slate-800 dark:text-white">FaucheXD .</a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#home" class="nav-link hover:text-sky-500 dark:hover:text-cyan-400 transition-colors" data-id="Beranda" data-en="Home">Home</a>
+      <a href="#about" class="nav-link hover:text-sky-500 dark:hover:text-cyan-400 transition-colors" data-id="Tentang" data-en="About">About</a>
+      <a href="#experience" class="nav-link hover:text-sky-500 dark:hover:text-cyan-400 transition-colors" data-id="Pengalaman" data-en="Experience">Experience</a>
+      <a href="#contact" class="nav-link hover:text-sky-500 dark:hover:text-cyan-400 transition-colors" data-id="Kontak" data-en="Contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <button id="lang-toggle" class="hover-wiggle text-xs font-bold px-3 py-1.5 rounded-full border border-blue-200 dark:border-slate-700 hover:border-cyan-400 transition-colors">
+        EN
+      </button>
+      <button id="theme-toggle" aria-label="Ganti tema" class="hover-wiggle p-2 rounded-full border border-blue-200 dark:border-slate-700 hover:border-cyan-400 transition-colors">
+        <svg id="icon-sun" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg id="icon-moon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="md:hidden flex justify-around border-t border-blue-100 dark:border-slate-800 py-2 text-xs font-medium">
+    <a href="#home" class="nav-link" data-id="Beranda" data-en="Home">Home</a>
+    <a href="#about" class="nav-link" data-id="Tentang" data-en="About">About</a>
+    <a href="#experience" class="nav-link" data-id="Pengalaman" data-en="Experience">Experience</a>
+    <a href="#contact" class="nav-link" data-id="Kontak" data-en="Contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative overflow-hidden">
+
+  <div aria-hidden="true" class="pointer-events-none select-none">
+    <div class="absolute -top-16 -left-10 w-72 h-72 bg-cyan-300/30 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute top-24 right-0 w-64 h-64 bg-sky-300/30 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay:1s"></div>
+
+    <span class="absolute top-20 left-10 w-4 h-4 bg-sky-400 dark:bg-cyan-400 rounded-full animate-float"></span>
+    <span class="absolute top-40 right-16 w-3 h-3 bg-blue-400 rounded-full animate-float-slow"></span>
+    <span class="absolute bottom-24 left-1/4 w-5 h-5 bg-cyan-300 rounded-full opacity-70 animate-float"></span>
+    <span class="absolute top-1/2 left-6 w-2.5 h-2.5 bg-blue-300 rounded-full animate-bounce"></span>
+    <span class="absolute bottom-10 right-1/4 w-3 h-3 bg-sky-300 rounded-full animate-ping"></span>
+
+    <svg class="absolute bottom-16 right-1/3 w-6 h-6 text-sky-400 dark:text-cyan-400 animate-float-slow" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11 2h2v9h9v2h-9v9h-2v-9H2v-2h9V2z"/>
+    </svg>
+    <svg class="absolute top-1/3 left-1/3 w-5 h-5 text-blue-300 animate-float" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l1.9 6.6L21 10l-6.1 1.4L13 18l-1.9-6.6L5 10l6.1-1.4L12 2z"/>
+    </svg>
+    <svg class="absolute top-12 right-1/4 w-5 h-5 text-cyan-300 animate-float" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11 2h2v9h9v2h-9v9h-2v-9H2v-2h9V2z"/>
+    </svg>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col-reverse md:flex-row items-center gap-12">
+    <div class="flex-1 text-center md:text-left">
+      <p class="text-sky-600 dark:text-cyan-400 font-semibold mb-3" data-id="Halo, perkenalkan saya" data-en="Hi there, I'm">Halo, perkenalkan saya</p>
+
+      <h1 class="font-display text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">
+        <span class="block" data-id="Gus De" data-en="Gus De">Gus De</span>
+        <span class="block" data-id="Mahasiswa S1 Ilmu Komputer" data-en="Computer Science Undergraduate">Mahasiswa S1 Ilmu Komputer</span>
+      </h1>
+
+      <p class="mt-5 text-lg max-w-lg mx-auto md:mx-0"
+         data-id="Tertarik pada AI dan Game Development." data-en="Interested in AI and Game Development.">
+        Tertarik pada AI dan Game Development.
+      </p>
+
+      <div class="mt-8">
+        <a href="#contact" class="hover-wiggle inline-block bg-sky-600 dark:bg-cyan-500 hover:bg-sky-700 dark:hover:bg-cyan-400 text-white font-semibold px-7 py-3 rounded-full shadow-lg transition-colors"
+           data-id="Hubungi Saya" data-en="Contact Me">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+    <div class="flex-1 flex justify-center">
+      <div class="animate-pulse-glow w-64 h-72 md:w-72 md:h-80 rounded-3xl bg-gradient-to-br from-sky-100 to-cyan-100 dark:from-slate-800 dark:to-slate-700 ring-4 ring-white/60 dark:ring-slate-700/60 overflow-hidden flex items-center justify-center">
+        <img src="assets/gusde2.png" alt="Foto Gus De" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span style="display:none" class="w-full h-full items-center justify-center font-display text-7xl text-sky-400 dark:text-slate-500">G</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="relative overflow-hidden">
+
+  <div aria-hidden="true" class="pointer-events-none select-none">
+    <div class="absolute top-10 -left-16 w-64 h-64 bg-sky-300/25 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <span class="absolute top-16 right-10 w-3 h-3 bg-cyan-400 rounded-full animate-float"></span>
+    <span class="absolute bottom-20 left-16 w-4 h-4 bg-blue-300 rounded-full animate-float-slow"></span>
+    <span class="absolute top-1/2 right-1/4 w-2.5 h-2.5 bg-sky-400 rounded-full animate-ping"></span>
+    <svg class="absolute bottom-10 right-16 w-5 h-5 text-sky-300 animate-float" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l1.9 6.6L21 10l-6.1 1.4L13 18l-1.9-6.6L5 10l6.1-1.4L12 2z"/>
+    </svg>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto px-6 py-20">
+    <h2 class="reveal font-display text-3xl font-bold text-slate-900 dark:text-white mb-6 text-center" data-id="Tentang Saya" data-en="About Me">Tentang Saya</h2>
+    <div class="reveal reveal-delay-1 bg-white/60 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 md:p-10 leading-relaxed">
+      <p data-id='Saya adalah mahasiswa Semester 5 Program Studi S1 Ilmu Komputer di <span class="font-semibold text-slate-900 dark:text-white">Universitas Pendidikan Ganesha (Undiksha)</span>. Perjalanan saya di dunia teknologi berawal dari rasa ingin tahu tentang bagaimana mesin bisa berpikir.' data-en='I am a 5th semester Computer Science undergraduate student at <span class="font-semibold text-slate-900 dark:text-white">Universitas Pendidikan Ganesha (Undiksha)</span>. My journey in technology began with curiosity about how machines can think.'>
+        Saya adalah mahasiswa Semester 5 Program Studi S1 Ilmu Komputer di
+        <span class="font-semibold text-slate-900 dark:text-white">Universitas Pendidikan Ganesha (Undiksha)</span>.
+        Perjalanan saya di dunia teknologi berawal dari rasa ingin tahu tentang bagaimana mesin bisa berpikir.
+      </p>
+      <p class="mt-4" data-id='Saya menikmati proses membangun <span class="text-cyan-600 dark:text-cyan-400">game interaktif</span>, tempat logika, kreativitas, dan pengalaman pengguna bertemu dalam satu karya. Bagi saya, coding bukan sekadar menulis instruksi untuk komputer, melainkan cara memecahkan masalah nyata dan menciptakan sesuatu yang bisa dirasakan orang lain.' data-en='I enjoy the process of building <span class="text-cyan-600 dark:text-cyan-400">interactive games</span>, where logic, creativity, and user experience meet in one work. To me, coding is not just writing instructions for a computer, but a way to solve real problems and create something other people can feel.'>
+        Saya menikmati proses membangun <span class="text-cyan-600 dark:text-cyan-400">game interaktif</span>,
+        tempat logika, kreativitas, dan pengalaman pengguna bertemu dalam satu karya. Bagi saya, coding bukan sekadar menulis
+        instruksi untuk komputer, melainkan cara memecahkan masalah nyata dan menciptakan sesuatu yang bisa dirasakan orang lain.
+      </p>
+      <p class="mt-4" data-id='Selain aktif di perkuliahan, saya juga terlibat dalam organisasi dan berbagai kepanitiaan kampus, pengalaman yang mengasah kemampuan kerja tim, tanggung jawab, dan komunikasi saya di luar layar komputer.' data-en='Besides staying active in my studies, I am also involved in campus organizations and various committees, an experience that sharpens my teamwork, responsibility, and communication skills beyond the computer screen.'>
+        Selain aktif di perkuliahan, saya juga terlibat dalam organisasi dan berbagai kepanitiaan kampus, pengalaman yang mengasah
+        kemampuan kerja tim, tanggung jawab, dan komunikasi saya di luar layar komputer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="relative overflow-hidden">
+
+  <div aria-hidden="true" class="pointer-events-none select-none">
+    <div class="absolute top-0 right-0 w-72 h-72 bg-cyan-300/25 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 -left-10 w-64 h-64 bg-sky-300/25 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay:1.4s"></div>
+    <span class="absolute top-24 left-1/3 w-3 h-3 bg-blue-400 rounded-full animate-float"></span>
+    <span class="absolute bottom-32 right-1/4 w-4 h-4 bg-cyan-300 rounded-full animate-float-slow"></span>
+    <span class="absolute top-1/2 right-10 w-2.5 h-2.5 bg-sky-400 rounded-full animate-bounce"></span>
+    <span class="absolute bottom-10 left-10 w-3 h-3 bg-blue-300 rounded-full animate-ping"></span>
+    <svg class="absolute top-10 left-10 w-5 h-5 text-sky-300 animate-float-slow" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11 2h2v9h9v2h-9v9h-2v-9H2v-2h9V2z"/>
+    </svg>
+    <svg class="absolute bottom-16 right-16 w-5 h-5 text-cyan-300 animate-float" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l1.9 6.6L21 10l-6.1 1.4L13 18l-1.9-6.6L5 10l6.1-1.4L12 2z"/>
+    </svg>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6 py-20">
+    <h2 class="reveal font-display text-3xl font-bold text-slate-900 dark:text-white mb-10 text-center" data-id="Pengalaman & Kepanitiaan" data-en="Experience & Committees">Pengalaman & Kepanitiaan</h2>
+
+    <!-- 2024 -->
+    <div class="mb-12">
+      <h3 class="reveal text-gradient-blue font-display text-2xl font-bold mb-5">2024</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="reveal reveal-delay-1 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">INTEGER #6</h4>
+          <p class="text-sm mt-1" data-id="Sie Teknis" data-en="Technical Division">Sie Teknis</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="mb-12">
+      <h3 class="reveal text-gradient-blue font-display text-2xl font-bold mb-5">2025</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="reveal reveal-delay-1 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">Dies Natalis 32 Undiksha</h4>
+          <p class="text-sm mt-1" data-id="Sie Keamanan" data-en="Security Division">Sie Keamanan</p>
+        </div>
+        <div class="reveal reveal-delay-2 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">PKKMB Undiksha 2025</h4>
+          <p class="text-sm mt-1" data-id="Sie Konsumsi" data-en="Logistics & Consumption Division">Sie Konsumsi</p>
+        </div>
+        <div class="reveal reveal-delay-3 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">Public Speaking POKJA FTK</h4>
+          <p class="text-sm mt-1" data-id="Sie Kesekretariatan" data-en="Secretariat Division">Sie Kesekretariatan</p>
+        </div>
+        <div class="reveal reveal-delay-4 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">INTEGER #7</h4>
+          <p class="text-sm mt-1" data-id="Sie Expo" data-en="Exhibition Division">Sie Expo</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2026 -->
+    <div>
+      <h3 class="reveal text-gradient-blue font-display text-2xl font-bold mb-5">2026</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="reveal reveal-delay-1 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">Dies Natalis 33 Undiksha</h4>
+          <p class="text-sm mt-1" data-id="Sie Kerohanian" data-en="Spiritual Affairs Division">Sie Kerohanian</p>
+        </div>
+        <div class="reveal reveal-delay-2 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">Gerak Jalan Putra & Putri Undiksha 2026</h4>
+          <p class="text-sm mt-1" data-id="Sekretaris Sie Perlengkapan" data-en="Secretary, Equipment Division">Sekretaris Sie Perlengkapan</p>
+        </div>
+        <div class="reveal reveal-delay-3 bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 hover:border-cyan-400 transition-colors">
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">PKKMB Undiksha 2026</h4>
+          <p class="text-sm mt-1" data-id="Sie Keamanan" data-en="Security Division">Sie Keamanan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="relative overflow-hidden">
+
+  <div aria-hidden="true" class="pointer-events-none select-none">
+    <div class="absolute top-0 -left-10 w-64 h-64 bg-sky-300/25 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-72 h-72 bg-cyan-300/25 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay:0.8s"></div>
+    <span class="absolute top-16 right-1/4 w-3 h-3 bg-cyan-400 rounded-full animate-float"></span>
+    <span class="absolute bottom-24 left-1/4 w-4 h-4 bg-blue-300 rounded-full animate-float-slow"></span>
+    <span class="absolute top-1/2 left-10 w-2.5 h-2.5 bg-sky-400 rounded-full animate-ping"></span>
+    <span class="absolute bottom-10 right-10 w-3 h-3 bg-blue-400 rounded-full animate-bounce"></span>
+    <svg class="absolute top-10 right-10 w-5 h-5 text-cyan-300 animate-float-slow" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11 2h2v9h9v2h-9v9h-2v-9H2v-2h9V2z"/>
+    </svg>
+    <svg class="absolute bottom-16 left-16 w-5 h-5 text-sky-300 animate-float" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l1.9 6.6L21 10l-6.1 1.4L13 18l-1.9-6.6L5 10l6.1-1.4L12 2z"/>
+    </svg>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto px-6 py-20">
+    <h2 class="reveal font-display text-3xl font-bold text-slate-900 dark:text-white mb-4 text-center" data-id="Hubungi Saya" data-en="Get In Touch">Hubungi Saya</h2>
+    <p class="reveal reveal-delay-1 text-center mb-10" data-id="Terbuka untuk kolaborasi, diskusi, atau sekadar menyapa."
+       data-en="Open to collaboration, discussion, or just saying hi.">
+      Terbuka untuk kolaborasi, diskusi, atau sekadar menyapa.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+      <a href="mailto:gusdebrahma14@gmail.com" class="reveal reveal-delay-1 hover-wiggle bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 flex flex-col items-center text-center hover:border-cyan-400 transition-colors">
+        <span class="w-12 h-12 rounded-full bg-sky-100 dark:bg-cyan-500/10 flex items-center justify-center text-sky-600 dark:text-cyan-400 mb-3">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </span>
+        <p class="font-semibold text-slate-900 dark:text-white">Email</p>
+        <p class="text-sm mt-1 break-all">gusdebrahma14@gmail.com</p>
+      </a>
+
+      <a href="https://wa.me/6285903686356" target="_blank" rel="noopener" class="reveal reveal-delay-2 hover-wiggle bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 flex flex-col items-center text-center hover:border-cyan-400 transition-colors">
+        <span class="w-12 h-12 rounded-full bg-sky-100 dark:bg-cyan-500/10 flex items-center justify-center text-sky-600 dark:text-cyan-400 mb-3">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.9 11.9 0 005.66 1.44h.01c6.56 0 11.86-5.3 11.86-11.86 0-3.17-1.24-6.15-3.41-8.42zM12.07 21.3h-.01a9.43 9.43 0 01-4.8-1.31l-.34-.2-3.58.94.96-3.49-.22-.36a9.4 9.4 0 01-1.45-5.02c0-5.19 4.22-9.41 9.42-9.41a9.35 9.35 0 016.66 2.76 9.35 9.35 0 012.75 6.66c0 5.19-4.22 9.41-9.4 9.41z"/>
+          </svg>
+        </span>
+        <p class="font-semibold text-slate-900 dark:text-white">WhatsApp</p>
+        <p class="text-sm mt-1">0859 0368 6356</p>
+      </a>
+
+      <a href="https://www.instagram.com/gusdelagii/" target="_blank" rel="noopener" class="reveal reveal-delay-3 hover-wiggle bg-white/60 dark:bg-slate-800/40 border border-blue-100 dark:border-slate-700 rounded-xl p-6 flex flex-col items-center text-center hover:border-cyan-400 transition-colors">
+        <span class="w-12 h-12 rounded-full bg-sky-100 dark:bg-cyan-500/10 flex items-center justify-center text-sky-600 dark:text-cyan-400 mb-3">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/>
+          </svg>
+        </span>
+        <p class="font-semibold text-slate-900 dark:text-white">Instagram</p>
+        <p class="text-sm mt-1">@gusdelagii</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-slate-900 dark:bg-black text-slate-300 mt-10">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <div class="reveal reveal-delay-1">
+      <h3 class="font-display text-2xl font-bold text-white mb-3">Gus De</h3>
+      <p class="text-sm text-slate-400 max-w-sm" data-id="Mahasiswa S1 Ilmu Komputer Undiksha yang fokus pada AI dan Game Development."
+         data-en="Undiksha Computer Science undergraduate focused on AI and Game Development.">
+        Mahasiswa S1 Ilmu Komputer Undiksha yang fokus pada AI dan Game Development.
+      </p>
+      <div class="mt-4 space-y-1 text-sm text-slate-400">
+        <p>gusdebrahma14@gmail.com</p>
+        <p>085903686356</p>
+      </div>
+      <div class="flex gap-3 mt-5">
+        <a href="mailto:gusdebrahma14@gmail.com" class="hover-wiggle w-9 h-9 rounded-full bg-slate-800 hover:bg-cyan-500 hover:text-slate-900 flex items-center justify-center transition-colors">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/6285903686356" target="_blank" rel="noopener" class="hover-wiggle w-9 h-9 rounded-full bg-slate-800 hover:bg-cyan-500 hover:text-slate-900 flex items-center justify-center transition-colors">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.93L0 24l6.4-1.68a11.9 11.9 0 005.66 1.44h.01c6.56 0 11.86-5.3 11.86-11.86 0-3.17-1.24-6.15-3.41-8.42zM12.07 21.3h-.01a9.43 9.43 0 01-4.8-1.31l-.34-.2-3.58.94.96-3.49-.22-.36a9.4 9.4 0 01-1.45-5.02c0-5.19 4.22-9.41 9.42-9.41a9.35 9.35 0 016.66 2.76 9.35 9.35 0 012.75 6.66c0 5.19-4.22 9.41-9.4 9.41z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/gusdelagii/" target="_blank" rel="noopener" class="hover-wiggle w-9 h-9 rounded-full bg-slate-800 hover:bg-cyan-500 hover:text-slate-900 flex items-center justify-center transition-colors">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2 md:text-right">
+      <h4 class="font-display font-semibold text-white mb-3" data-id="Navigasi" data-en="Quick Links">Navigasi</h4>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#home" class="nav-link hover:text-cyan-400 transition-colors" data-id="Beranda" data-en="Home">Home</a></li>
+        <li><a href="#about" class="nav-link hover:text-cyan-400 transition-colors" data-id="Tentang" data-en="About">About</a></li>
+        <li><a href="#experience" class="nav-link hover:text-cyan-400 transition-colors" data-id="Pengalaman" data-en="Experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link hover:text-cyan-400 transition-colors" data-id="Kontak" data-en="Contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="border-t border-slate-800">
+    <p class="text-center text-xs text-slate-500 py-6">© 2026 FaucheXD. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
